@@ -1,0 +1,21 @@
+{
+  \"name\": \"OTP Ocean Bot\",
+  \"description\": \"Telegram bot for selling pre-loaded accounts with wallet, referral, and OTP fetch.\",
+  \"keywords\": [\"telegram\", \"bot\", \"pyrogram\", \"otp\"],
+  \"env\": {
+    \"BOT_TOKEN\":        { \"description\": \"Telegram bot token from @BotFather\" },
+    \"API_ID\":           { \"description\": \"Telegram API ID from https://my.telegram.org\" },
+    \"API_HASH\":         { \"description\": \"Telegram API HASH from https://my.telegram.org\" },
+    \"ADMIN_ID\":         { \"description\": \"Your Telegram user ID (from @userinfobot)\" },
+    \"LOG_GROUP\":        { \"description\": \"Log group chat ID (starts with -100)\" },
+    \"MONGO_URL\":        { \"description\": \"MongoDB connection URI (mongodb+srv://...)\" },
+    \"APP_URL\":          { \"description\": \"Public URL of this app (set after first deploy for keep-alive)\", \"required\": false },
+    \"SUPPORT_USERNAME\": { \"description\": \"Support username shown to users\", \"value\": \"@OTPOceanSupportBot\", \"required\": false }
+  },
+  \"formation\": {
+    \"web\": { \"quantity\": 1, \"size\": \"eco\" }
+  },
+  \"buildpacks\": [
+    { \"url\": \"heroku/python\" }
+  ]
+}
