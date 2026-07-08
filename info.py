@@ -47,4 +47,6 @@ APP_URL = os.environ.get("APP_URL", "").strip().rstrip("/")
 SUPPORT_USERNAME = os.environ.get("SUPPORT_USERNAME", "@OTPOceanSupportBot")
 
 # ══════════════════════════════════════════════════════════════
-#  TEXT STRINGS  (edit these to customize your bot's voice)\n# ══════════════════════════════════════════════════════════════\n\n# Loaded from locales/*.py — see handlers/i18n.py for translation helper\nDEFAULT_LANG = "en"\nSUPPORTED_LANGS = ["en", "hi"]\n"\n
+# Loaded from locales/*.py — see handlers/i18n.py for translation helper
+DEFAULT_LANG = "en"
+SUPPORTED_LANGS = ["en", "hi"]
